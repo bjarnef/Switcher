@@ -3,9 +3,9 @@
     {
         alias: "Our.Umbraco.Switcher",
         name: "Switcher",
-        valueType: "INT",
         editor:{
-            view: "~/App_Plugins/Switcher/switcher.html"
+            view: "~/App_Plugins/Switcher/switcher.html",
+            valueType: "INT"
         },
         prevalues: {
             fields:[
