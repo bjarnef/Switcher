@@ -35,7 +35,7 @@
 .switcher.checked small {
   left: 22px;
 }
-.switch-status {
+.switcher-status {
   display: inline-block;
   vertical-align: top;
   padding: 5px;
@@ -43,7 +43,7 @@
   transition: color .3s ease-in-out;
   -webkit-transition: color .3s ease-in-out;
 }
-.switch-status.active {
+.switcher-status.active {
   color: #343434;
 }
 

@@ -1,5 +1,5 @@
 <div ng-controller="Our.SwitcherController">
-    <span class="switch-status" ng-show="showLabel && statusLeftRight" ng-class="{ active: !enabled }">{{model.textLeft}}</span>
+    <span class="switcher-status" ng-show="showLabel && statusLeftRight" ng-class="{ active: !enabled }">{{model.textLeft}}</span>
 	<switch name="enabled" ng-model="enabled" id="{{model.alias}}" class="{{switchStyle}}"></switch>
-    <span class="switch-status" ng-show="showLabel" ng-class="{ active: enabled || (statusLeftRight && enabled) }">{{model.textRight}}</span>
+    <span class="switcher-status" ng-show="showLabel" ng-class="{ active: enabled || (statusLeftRight && enabled) }">{{model.textRight}}</span>
 </div>
