@@ -6,7 +6,7 @@ angular.module('umbraco').directive('switch', function() {
     template: function(element, attrs) {
       var html = '';
       html += '<span';
-      html +=   ' class="switch' + (attrs.class ? ' ' + attrs.class : '') + '"';
+      html +=   ' class="switcher' + (attrs.class ? ' ' + attrs.class : '') + '"';
       html +=   attrs.ngModel ? ' ng-click="' + attrs.ngModel + '=!' + attrs.ngModel + '"' : '';
       html +=   ' ng-class="{ checked:' + attrs.ngModel + ' }"';
       html +=   '>';

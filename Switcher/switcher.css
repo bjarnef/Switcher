@@ -1,4 +1,4 @@
-.switch {
+.switcher{
   background: #fff;
   border: 1px solid #dfdfdf;
   position: relative;
@@ -16,7 +16,7 @@
   -webkit-transition: 0.3s ease-out all;
   top: -1px;
 }
-.switch small {
+.switcher small {
   background: #fff;
   border-radius: 100%;
   box-shadow: 0 1px 3px rgba(0,0,0,0.4);
@@ -28,11 +28,11 @@
   transition: 0.3s ease-out all;
   -webkit-transition: 0.3s ease-out all;
 }
-.switch.checked {
+.switcher.checked {
   background: rgb(100, 189, 99);
   border-color: rgb(100, 189, 99);
 }
-.switch.checked small {
+.switcher.checked small {
   left: 22px;
 }
 .switch-status {
@@ -47,11 +47,11 @@
   color: #343434;
 }
 
-.switch.blue.checked {
+.switcher.blue.checked {
   background: rgb(54, 180, 246);
   border-color: rgb(54, 180, 246);
 }
-.switch.red.checked {
+.switcher.red.checked {
   background: rgb(223, 59, 58);
   border-color: rgb(223, 59, 58);
 }
