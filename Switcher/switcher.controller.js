@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("Our.SwitcherController", function ($scope) {
+angular.module("umbraco").controller("Our.SwitcherController", function ($scope, localizationService) {
 
     $scope.switchStyle = ($scope.model.config.switchClass != undefined || $scope.model.config.switchClass == "") ? $scope.model.config.switchClass : "";
     $scope.showLabel = $scope.model.config.hideLabel == false || $scope.model.config.hideLabel == undefined;
@@ -8,12 +8,52 @@ angular.module("umbraco").controller("Our.SwitcherController", function ($scope)
         $scope.onLabelText = "On";
     } else {
         $scope.onLabelText = $scope.model.config.onLabelText;
+
+        var re = new RegExp(/^(?:\{\{)(?:[^\ ]*)(?:\}\})$/gm);
+        var str = $scope.onLabelText;
+        //console.log(str);
+        
+        if (re.test(str)) {
+            // the string contains match the pattern "{{ }}"
+
+            str = str.trim().replace("{{","").replace("}}","");
+
+            localizationService.localize(str)
+            .always(function(response) {
+                $scope.offLabelText = "[" + str + "]";
+            })
+            .then(function (value) {
+                var text = value != null ? value : "";
+                //console.log(text);
+                $scope.onLabelText = text;
+            });
+        }
     }
 
     if($scope.model.config.offLabelText === null || $scope.model.config.offLabelText === "") {
         $scope.offLabelText = "Off";
     } else {
         $scope.offLabelText = $scope.model.config.offLabelText;
+
+        var re = new RegExp(/^(?:\{\{)(?:[^\ ]*)(?:\}\})$/gm);
+        var str = $scope.offLabelText;
+        //console.log(str);
+
+        if (re.test(str)) {
+            // the string contains match the pattern "{{ }}"
+
+            str = str.trim().replace("{{","").replace("}}","");
+            
+            localizationService.localize(str)
+            .always(function(response) {
+                $scope.offLabelText = "[" + str + "]";
+            })
+            .then(function (value) {
+                var text = value != null ? value : "";
+                //console.log(text);
+                $scope.offLabelText = text;
+            });
+        }
     }
 
     $scope.model.textLeft = "";
@@ -44,7 +84,6 @@ angular.module("umbraco").controller("Our.SwitcherController", function ($scope)
                 $scope.model.textRight = $scope.onLabelText;
             }
         }
-
     }, true);
 
 });
