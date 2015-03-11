@@ -1,9 +1,11 @@
-angular.module("umbraco").controller("Our.SwitcherController", function ($scope, localizationService) {
+angular.module("umbraco").controller("Our.SwitcherController", function ($scope, $timeout, angularHelper, localizationService) {
 
     $scope.switchStyle = ($scope.model.config.switchClass != undefined || $scope.model.config.switchClass == "") ? $scope.model.config.switchClass : "";
     $scope.showLabel = $scope.model.config.hideLabel == false || $scope.model.config.hideLabel == undefined;
     $scope.statusLeftRight = $scope.model.config.statusLeftRight == true;
     
+    var alreadyDirty = false;
+
     if($scope.model.config.onLabelText === null || $scope.model.config.onLabelText === "") {
         $scope.onLabelText = "On";
     } else {
@@ -37,10 +39,9 @@ angular.module("umbraco").controller("Our.SwitcherController", function ($scope,
 
         var re = new RegExp(/^(?:\{\{)(?:[^\ ]*)(?:\}\})$/gm);
         var str = $scope.offLabelText;
-        //console.log(str);
 
         if (re.test(str)) {
-            // the string contains match the pattern "{{ }}"
+            // the string match the pattern "{{ }}"
 
             str = str.trim().replace("{{","").replace("}}","");
             
@@ -50,7 +51,6 @@ angular.module("umbraco").controller("Our.SwitcherController", function ($scope,
             })
             .then(function (value) {
                 var text = value != null ? value : "";
-                //console.log(text);
                 $scope.offLabelText = text;
             });
         }
@@ -84,6 +84,18 @@ angular.module("umbraco").controller("Our.SwitcherController", function ($scope,
                 $scope.model.textRight = $scope.onLabelText;
             }
         }
+
+        if(newval !== oldval) {
+            //run after DOM is loaded
+            $timeout(function () {
+                if (!alreadyDirty) {
+                    var currForm = angularHelper.getCurrentForm($scope);
+                    currForm.$setDirty();
+                    alreadyDirty = true;
+                }
+            }, 0);
+        }
+
     }, true);
 
 });
