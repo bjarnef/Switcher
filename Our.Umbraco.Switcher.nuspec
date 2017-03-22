@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Our.Umbraco.Switcher</id>
+    <version>1.0.3</version>
+    <authors>Bjarne Fyrstenborg</authors>
+    <owners>Bjarne Fyrstenborg</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://our.umbraco.org/projects/backoffice-extensions/switcher</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple property editor that works as an alternative to the core true/false datatype.</description>
+    <releaseNotes>v1.0.3
+New: Nuget package build
+New: Updated colours and swich styles
+
+v1.0.2
+Fix: Set form $dirty property to true, so the editor see the prompt warning about unsaved changes.
+
+v1.0.1
+New: Localization support for labels
+Fix: Switch class conflicted with class on datepicker in Umbraco 7.1.x
+
+v1.0.0
+Initial release    
+    </releaseNotes>
+    <tags>Umbraco</tags>
+  </metadata>
+    <files>
+      <file src="Switcher\**\*.*" target="content\App_Plugins\Switcher" />
+    </files>
+</package>
