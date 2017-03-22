@@ -56,3 +56,14 @@
   background: #fe5b57;
   border-color: #fe5b57;
 }
+
+.switcher.purple.checked {
+   background: rgb(103, 94, 122);
+   border-color: rgb(103, 94, 122);
+}
+
+.switcher.turquoise.checked {
+  background: rgb(0, 174, 162);
+  border-color: rgb(0, 174, 162);
+}
+
