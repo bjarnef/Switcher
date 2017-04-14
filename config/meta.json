@@ -1,0 +1,10 @@
+{
+	"name": "Switcher",
+	"directory": "Switcher",
+	"version": "1.0.3",
+	"url": "https://github.com/bjarnef/Switcher",
+	"author": "Bjarne Fyrstenborg",
+	"authorUrl": "https://github.com/bjarnef",
+	"license": "MIT",
+	"licenseUrl": "http://opensource.org/licenses/MIT"
+}
