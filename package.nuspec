@@ -29,6 +29,6 @@
     </releaseNotes>
   </metadata>
   <files>
-    <file src="app\**\*.*" target="content" />
+    <file src="app\**\*.*" target="content\App_Plugins\Switcher" />
   </files>
 </package>
