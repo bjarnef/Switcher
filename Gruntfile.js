@@ -38,8 +38,8 @@ module.exports = function(grunt) {
         },
         nugetpack: {
             release: {
-                src: 'src/' + pkg.name + '/' + pkg.name + '.csproj',
-                dest: 'releases/nuget/'
+                src: 'package.nuspec', //src: 'src/' + pkg.name + '/' + pkg.name + '.csproj',
+                dest: 'releases/nuget/',
             }
         },
         zip: {

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <id>Our.Umbraco.Switcher</id>
+    <version>1.0.3</version>
+    <title>Switcher</title>
     <authors>Bjarne Fyrstenborg</authors>
     <owners>Bjarne Fyrstenborg</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/bjarnef/Switcher</projectUrl>
-    <iconUrl></iconUrl>
+    <!--<iconUrl></iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Simple property editor that works as an alternative to the core true/false datatype.</description>
     <tags>Umbraco, Toggle</tags>
     <releaseNotes>
       v1.0.3
