@@ -29,8 +29,8 @@
   -webkit-transition: 0.3s ease-out all;
 }
 .switcher.checked {
-  background: rgb(100, 189, 99);
-  border-color: rgb(100, 189, 99);
+  background: rgb(53, 199, 134);
+  border-color: rgb(53, 199, 134);
 }
 .switcher.checked small {
   left: 22px;
@@ -56,8 +56,8 @@
   border-color: rgb(103, 94, 122);
 }
 .switcher.red.checked {
-  background: rgb(223, 59, 58);
-  border-color: rgb(223, 59, 58);
+  background: rgb(254, 62, 57);
+  border-color: rgb(254, 62, 57);
 }
 .switcher.turquoise.checked {
   background: rgb(0, 174, 162);
