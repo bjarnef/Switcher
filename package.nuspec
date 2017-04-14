@@ -28,4 +28,7 @@
       Initial release
     </releaseNotes>
   </metadata>
+  <files>
+    <file src="app\**\*.*" target="content" />
+  </files>
 </package>
