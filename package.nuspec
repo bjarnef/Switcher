@@ -15,7 +15,7 @@
     <releaseNotes>
       v1.0.3
       New: Nuget package build
-      New: Updated colours and swich styles
+      New: Updated colours and switch styles
       
       v1.0.2
       Fix: Set form $dirty property to true, so the editor see the prompt warning about unsaved changes.
