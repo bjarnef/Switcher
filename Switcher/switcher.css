@@ -51,7 +51,15 @@
   background: rgb(54, 180, 246);
   border-color: rgb(54, 180, 246);
 }
+.switcher.purple.checked {
+  background: rgb(103, 94, 122);
+  border-color: rgb(103, 94, 122);
+}
 .switcher.red.checked {
   background: rgb(223, 59, 58);
   border-color: rgb(223, 59, 58);
+}
+.switcher.turquoise.checked {
+  background: rgb(0, 174, 162);
+  border-color: rgb(0, 174, 162);
 }
