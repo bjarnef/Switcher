@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Our.Umbraco.Switcher</id>
     <version>1.0.3</version>
@@ -29,6 +29,6 @@
     </releaseNotes>
   </metadata>
   <files>
-    <file src="app\**\*.*" target="Content\App_Plugins\Switcher" />
+    <file src="app\**\*.*" target="content\App_Plugins\Switcher" />
   </files>
 </package>
