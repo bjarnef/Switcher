@@ -63,7 +63,7 @@ module.exports = function(grunt) {
                     licenseUrl: pkgMeta.licenseUrl,
                     author: pkgMeta.author,
                     authorUrl: pkgMeta.authorUrl,
-                    readme: 'config/readme.txt',
+                    readme: pkgMeta.readme,
                     outputName: pkgMeta.name + '.v' + pkgMeta.version + '.zip'
                 }
             }
