@@ -34,7 +34,11 @@
   border-color: rgb(53, 199, 134);
 }
 .switcher.checked small {
-  left: 22px;
+  -webkit-transform: translateX(22px);
+  -moz-transform: translateX(22px);
+  -ms-transform: translateX(22px);
+  -o-transform: translateX(22px);
+  transform: translateX(22px);
 }
 .switcher-status {
   display: inline-block;
