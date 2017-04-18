@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     var pkgMeta = grunt.file.readJSON('config/meta.json');
 
     // get the root path of the project
-    var projectRoot = 'src/' + pkg.name + '/';
+    var projectRoot = 'src/' + pkgMeta.name + '/';
 
     // Load information about the assembly
     //var assembly = grunt.file.readJSON(projectRoot + 'Properties/AssemblyInfo.json');
@@ -28,8 +28,8 @@ module.exports = function(grunt) {
                         expand: true,
                         cwd: projectRoot + 'bin/Release/',
                         src: [
-                            pkg.name + '.dll',
-                            pkg.name + '.xml'
+                            pkgMeta.name + '.dll',
+                            pkgMeta.name + '.xml'
                         ],
                         dest: 'files/bin/'
                     }
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         },
         nugetpack: {
             release: {
-                src: 'package.nuspec', //src: 'src/' + pkg.name + '/' + pkg.name + '.csproj',
+                src: 'package.nuspec', //src: 'src/' + pkgMeta.name + '/' + pkgMeta.name + '.csproj',
                 dest: 'releases/nuget/',
             }
         },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
                 src: [
                     'app/**/*.*'
                 ],
-                dest: 'releases/github/' + pkg.name + '.v' + pkgMeta.version + '.zip'
+                dest: 'releases/github/' + pkgMeta.name + '.v' + pkgMeta.version + '.zip'
             }
         },
         umbracoPackage: {
@@ -56,15 +56,15 @@ module.exports = function(grunt) {
                 src: 'app/',
                 dest: 'releases/umbraco',
                 options: {
-                    name: pkg.name,
+                    name: pkgMeta.name,
                     version: pkgMeta.version,
-                    url: pkg.url,
-                    license: pkg.license.name,
-                    licenseUrl: pkg.license.url,
-                    author: pkg.author.name,
-                    authorUrl: pkg.author.url,
-                    readme: pkg.readme,
-                    outputName: pkg.name + '.v' + pkgMeta.version + '.zip'
+                    url: pkgMeta.url,
+                    license: pkgMeta.license,
+                    licenseUrl: pkgMeta.licenseUrl,
+                    author: pkgMeta.author,
+                    authorUrl: pkgMeta.authorUrl,
+                    readme: 'config/readme.txt',
+                    outputName: pkgMeta.name + '.v' + pkgMeta.version + '.zip'
                 }
             }
         }

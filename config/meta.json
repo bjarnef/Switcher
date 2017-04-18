@@ -1,5 +1,6 @@
 {
 	"name": "Switcher",
+	"description": "Switcher for Umbraco 7",
 	"directory": "Switcher",
 	"version": "1.0.3",
 	"url": "https://github.com/bjarnef/Switcher",
