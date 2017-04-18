@@ -8,7 +8,7 @@
     <owners>Bjarne Fyrstenborg</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/bjarnef/Switcher</projectUrl>
-    <!--<iconUrl></iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/bjarnef/Switcher/master/assets/img/switcher-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple property editor that works as an alternative to the core true/false datatype.</description>
     <tags>Umbraco, Toggle</tags>
