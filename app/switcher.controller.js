@@ -1,4 +1,4 @@
-angular.module("umbraco").controller("Our.SwitcherController", function ($scope, $timeout, angularHelper, localizationService) {
+angular.module("umbraco").controller("Our.Umbraco.Switcher.Controller", function ($scope, $timeout, angularHelper, localizationService) {
 
     $scope.switchStyle = ($scope.model.config.switchClass != undefined || $scope.model.config.switchClass == "") ? $scope.model.config.switchClass : "";
     $scope.showLabel = $scope.model.config.hideLabel == false || $scope.model.config.hideLabel == undefined;

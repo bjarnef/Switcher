@@ -49,7 +49,7 @@
         }
   	}],
   	javascript: [
-      "~/App_Plugins/Switcher/switch.js",
+        "~/App_Plugins/Switcher/switch.js",
     	"~/App_Plugins/Switcher/switcher.controller.js"
 	],
     css: [
