@@ -51,6 +51,10 @@
   background: rgb(54, 180, 246);
   border-color: rgb(54, 180, 246);
 }
+.switcher.green.checked {
+  background: rgb(53, 199, 134);
+  border-color: rgb(53, 199, 134);
+}
 .switcher.purple.checked {
   background: rgb(103, 94, 122);
   border-color: rgb(103, 94, 122);
