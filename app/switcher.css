@@ -39,13 +39,13 @@
 .switcher-status {
   display: inline-block;
   vertical-align: top;
-  color: #dfdfdf;
   padding: 7px;
+  color: #d8d7d9;
   transition: color .3s ease-in-out;
   -webkit-transition: color .3s ease-in-out;
 }
 .switcher-status.active {
-  color: #343434;
+  color: #817f85;
 }
 
 .switcher.blue.checked {
