@@ -23,16 +23,16 @@ grunt
 ### Changelog
 
 **v1.0.3**
-New: Nuget package build
-New: Updated colours and switch styles
-New: Added option to show on/off icon in toggle button
+- New: Nuget package build
+- New: Updated colours and switch styles
+- New: Added option to show on/off icon in toggle button
 
 **v1.0.2**
-Fix: Set form $dirty property to true, so the editor see the prompt warning about unsaved changes.
+- Fix: Set form $dirty property to true, so the editor see the prompt warning about unsaved changes.
 
 **v1.0.1**
-New: Localization support for labels
-Fix: Switch class conflicted with class on datepicker in Umbraco 7.1.x
+- New: Localization support for labels
+- Fix: Switch class conflicted with class on datepicker in Umbraco 7.1.x
 
 **v1.0.0**
-Initial release
+- Initial release
