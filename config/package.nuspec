@@ -16,6 +16,7 @@
       v1.0.3
       New: Nuget package build
       New: Updated colours and switch styles
+      New: Added option to show on/off icon in toggle button
       
       v1.0.2
       Fix: Set form $dirty property to true, so the editor see the prompt warning about unsaved changes.
