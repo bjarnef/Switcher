@@ -41,7 +41,7 @@
                 },
                 {
                    label: "Switch class",
-                   description: "E.g. \"blue\", \"green\", \"purple\", \"red\"" or \"turquoise\",
+                   description: "E.g. \"blue\", \"green\", \"purple\", \"red\" or \"turquoise\"",
                    key: "switchClass",
                    view: "textstring"
                 }  
