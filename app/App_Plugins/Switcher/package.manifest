@@ -22,6 +22,12 @@
                    view: "boolean"
                 },
                 {
+                   label: "Show icons",
+                   description: "Show on/off icons in toggle button",
+                   key: "showIcons",
+                   view: "boolean"
+                },
+                {
                    label: "Use status text on left/right",
                    description: "Show status text on the left and right to the switch-button",
                    key: "statusLeftRight",

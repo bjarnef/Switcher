@@ -3,7 +3,9 @@ angular.module("umbraco").controller("Our.Umbraco.Switcher.Controller", function
     $scope.switchStyle = ($scope.model.config.switchClass != undefined || $scope.model.config.switchClass == "") ? $scope.model.config.switchClass : "";
     $scope.showLabel = $scope.model.config.hideLabel == false || $scope.model.config.hideLabel == undefined;
     $scope.statusLeftRight = $scope.model.config.statusLeftRight == true;
-    
+
+    $scope.showIcons = $scope.model.config.showIcons && $scope.model.config.showIcons !== '0' ? true : false;
+
     var alreadyDirty = false;
 
     if($scope.model.config.onLabelText === null || $scope.model.config.onLabelText === "") {

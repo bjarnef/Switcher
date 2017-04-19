@@ -16,6 +16,26 @@
   -webkit-transition: 0.3s ease-out all;
   top: 0px;
 }
+
+.switch-show-icons .switcher:before,
+.switch-show-icons .switcher:after {
+  font-family: 'icomoon';
+  font-size: 16px;
+  height: 100%; 
+  line-height: 34px;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+}
+.switch-show-icons .switcher.checked:before {
+  content: '\e165';
+  left: 6px;
+}
+.switch-show-icons .switcher:not(.checked):after {
+  content: '\e1a4';
+  right: 6px;
+}
+
 .switcher small {
   background: #fff;
   border-radius: 50%;
