@@ -1,11 +1,13 @@
 module.exports = function(grunt) {
 
+    var path = require('path');
+
     // Load the package JSON file
     var pkg = grunt.file.readJSON('package.json');
     var pkgMeta = grunt.file.readJSON('config/meta.json');
 
     // get the root path of the project
-    var projectRoot = 'src/' + pkgMeta.name + '/';
+    //var projectRoot = 'src/' + pkgMeta.name + '/';
 
     // Load information about the assembly
     //var assembly = grunt.file.readJSON(projectRoot + 'Properties/AssemblyInfo.json');
@@ -18,13 +20,13 @@ module.exports = function(grunt) {
         pkgMeta: pkgMeta,
         clean: {
             files: [
-                'files/**/*.*'
+                'releases/temp/'
             ]
         },
         copy: {
             release: {
                 files: [
-                    {
+                    /*{
                         expand: true,
                         cwd: projectRoot + 'bin/Release/',
                         src: [
@@ -32,7 +34,7 @@ module.exports = function(grunt) {
                             pkgMeta.name + '.xml'
                         ],
                         dest: 'files/bin/'
-                    }
+                    }*/
                 ]
             }
         },
