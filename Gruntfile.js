@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         },
         nugetpack: {
             release: {
-                src: 'package.nuspec', //src: 'src/' + pkgMeta.name + '/' + pkgMeta.name + '.csproj',
+                src: 'config/package.nuspec', //src: 'src/' + pkgMeta.name + '/' + pkgMeta.name + '.csproj',
                 dest: 'releases/nuget/',
             }
         },
