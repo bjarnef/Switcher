@@ -1,5 +1,8 @@
 # Switcher for Umbraco 7
 
+[![NuGet release](https://img.shields.io/nuget/v/Our.Umbraco.Switcher.svg)](https://www.nuget.org/packages/Our.Umbraco.Switcher/)
+[![Our Umbraco project page](https://img.shields.io/badge/our-umbraco-orange.svg)](https://our.umbraco.com/packages/backoffice-extensions/switcher/)
+
 Switcher is a simple property editor that works as an alternative to the core true/false datatype.
 It can be used for different kinds of true/false values e.g. on/off, active/deactive or enabled/disabled and gives a more visual feedback to the content editor. Furthermore it is great for content editors, who edit content from tablets, where the switch-button is touch friendly.
 
